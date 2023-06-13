@@ -1,0 +1,1963 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Aqui termina el reset -------------------------------------------------------------------------------a*/
+
+/* Dice que las cajas seran iguales al ancho maximo del width y que las imagenes igual ------------------------a*/
+    *{box-sizing: border-box;
+      width: 100%;
+     }
+
+    img{
+    max-width: 100%;
+        
+    }
+
+/* Modifica la imagen del logo y ese banner --------------------------------------------------------------------a*/
+.inicio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px
+    
+}
+div.inicio img{
+    
+    width: 140px;
+    
+}
+/*Aqui estan las caracteristicas del boton desplegable---------------------------------------------------------*/
+
+  .dropdown-item{
+    width:45px;
+    height:45px;
+    
+    padding: 3px;
+    
+    position: absolute;
+    right: 35px;
+    
+    display:inline-block;
+    border-radius: 4px;
+      
+    background-color: black;
+    
+    
+  }
+/*Aqui esta el ancho de la imagen del boton*/
+
+dropdown-item img{
+    width: 20px;
+    
+    }
+   
+    
+
+/*Aqui esta el color de la caja donde viene el texto*/
+.dropdown-item > a{
+    
+    color: black;
+    text-decoration: none;
+
+    
+}
+/*Modifica la caja de texto con el enlistad0*/
+.dropdown-item .menu{
+    
+    display:none;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: black;
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.8);
+    position: absolute;
+    
+    min-width: 70px;
+    }
+.dropdown-item:hover .menu{
+    
+    display:block;
+    }
+.drop-item .menu ul{
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+    text-align: left;
+    
+    }
+/*modifica el texto dentro del menu desplegable*/
+.dropdown-item .menu li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    
+    color: white;
+    
+    display: block;
+    padding 5px;
+    text-decoration: none;
+    }
+/*Modifica el color cuando se pasa el mouse por encima del menu*/
+.dropdown-item .menu li a:hover{
+    background-color: white;
+    color:black;
+    
+    
+    }
+/* El div fondo llama la imagen de portada y no se multiplicara  --------------------------------------------a*/
+        .fondo{
+             height: 185px;
+             width: 100%;
+            
+             padding-top: 70px;
+             padding-left: 20px;
+             padding-right: 20px;
+             text-align: center;
+             
+             background-position: left top;
+             background-image: url(../Recursos/panportada.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             }
+
+         .fondo h2{
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 800;
+             font-size: 30px;
+             font-style: italic;
+             
+             border-width: 2px;
+             border-style: solid;
+             
+             color: white;
+             }
+
+/* Este div modifica el titulo debajo de la imagen principal--------------------------------------------------*/
+    div.titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        
+        background-size: cover;
+        text-align: center;
+        
+        padding-top: 20px;
+        padding-bottom: 20px;*/
+        }
+
+    div.titulo span{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:  800;
+        font-style: italic;
+        
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+    .titulo span span{
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:  800;
+        font-style: italic;
+        
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+/*Este codigo modifica la introduccion----------------------------------------------------------------------*/
+.textotitulo{
+    
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: white;
+    
+    border-width: 2px;
+    border-style: solid;
+    
+    padding-left: 0px;
+    
+    
+    }
+
+  .textoimagen{
+    
+    padding-top: 10%;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    color: white;
+    
+    
+   
+    }
+
+   div.intro{
+             height: 300px;
+             width: 100%;
+             
+             padding-top: 60px;
+             padding-right: 20px;
+             padding-left: 20px;
+    
+             
+           
+             background-position: left top;
+             background-image: url(../Recursos/cocina.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             
+             transition: 2s background-image 2s;
+            
+    }
+div.intro:hover{
+ background-image: url(../Recursos/pan.png);
+}
+/* Este codigo modifica el fondo1----------------------------------------------------------------------*/
+
+div.fondo01{
+    height: 300px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: black;
+    background-size: cover;
+    
+    
+}
+
+.textotitulo01{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: white;
+    
+}
+.textofondo01{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: white;
+}
+/*Este codigo modifica el fondo2-----------------------------------------------------------------------*/
+div.fondo02{
+    height: 300px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: #d8d8d8;
+    background-size: cover;
+    
+}
+
+.textotitulo02{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: black;
+    
+}
+.textofondo02{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    
+    color: black;
+}
+    /*Este codigo modifica el icono 1-----------------------------------------------------------------------*/
+div.icono01 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe01{
+    width: 40%;
+    padding-bottom: 10%;
+    
+    display:block;
+    margin: auto;
+}
+.textotitulo1{
+    
+    padding-bottom: 5%;
+    
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon1{
+    padding-bottom: 2%;
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+        
+    }
+/*Este codigo modifica el icono 2-----------------------------------------------------------------------*/
+
+div.icono02 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe02{
+    width: 40%;
+    padding-bottom: 10%;
+    
+    display:block;
+    margin: auto;
+}
+.textotitulo2{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon2{
+    padding-bottom: 2%;
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+        
+        
+    }
+/*Este codigo modifica el fondo 3------------------------------------------------------------------------*/
+div.fondo7{
+    height: 300px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: #a65539;
+    background-size: cover;
+    
+}
+
+.textotitulo7{  /*este*/
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: white;
+    
+}
+.textofondo7{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    
+    color: white;
+}
+/*Este codigo modifica el fondo 4------------------------------------------------------------------------*/
+div.fondo8{
+    height: 300px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    background-color: none;
+    background-size: cover;
+    
+}
+
+.textotitulo8{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: #a65539;
+    
+}
+.textofondo8{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: #a65539;
+}
+
+div.fondo8 p a{
+    color: #a65539;
+    text-decoration: underline;
+}
+div.fondo8 p a:hover{
+    color: black;
+    text-decoration: none;
+}
+/*Este codigo modifica el pie de pagina------------------------------------------------------------------------*/
+div.divisionfinal01{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;     
+    float: left;
+    display: inline-block;
+    
+    max-height: 18px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal01:hover{
+    max-height: 400px;
+    
+}
+div.divisionfinal02{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;
+    float: left;
+    display: inline-block;
+
+    max-height: 18px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal02:hover{
+    max-height: 400px;
+    
+}
+    
+}
+/*Aqui va el legal*/
+div.legal{
+    padding-top: 1%;
+    display: inline-block;
+    
+}
+div.legal {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 16px;
+    
+    background-color: black;
+    color: gray;
+     
+}
+
+/*Aqui comienzan las media Queries01---------------------------------------------------------------------------*/
+@media screen and (min-width:450px)and (max-width:699px){
+    .inicio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+div.inicio img{
+
+    width: 160px;
+    
+}
+
+/* El div fondo llama la imagen de portada y no se multiplicara  --------------------------------------------a*/
+        .fondo{
+             height: 200px;
+             width: 100%;
+            
+            
+             padding-top: 70px;
+             padding-left: 15%;
+             padding-right: 15%;
+             text-align: center;
+             
+             background-position: left top;
+             background-image: url(../Recursos/panportada.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             }
+
+         .fondo h2{
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 800;
+             font-size: 45px;
+             font-style: italic;
+             
+             border-width: 4px;
+             border-style: solid;
+             
+             color: white;
+             }
+
+/* Este div modifica el titulo debajo de la imagen principal--------------------------------------------------*/
+    div.titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        
+        background-size: cover;
+        text-align: center;
+        
+        padding-top: 20px;
+        padding-bottom: 20px;*/
+        }
+
+    div.titulo span{
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+    .titulo span span{
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: auto;
+        
+        }
+
+/*Este codigo modifica la introduccion----------------------------------------------------------------------*/
+.textotitulo{
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: white;
+    
+    border-width: 2px;
+    border-style: solid;
+    
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    }
+
+  .textoimagen{
+    
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-left: 0%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+      
+    color: white;
+    
+    
+   
+    }
+
+   div.intro{
+             height: 300px;
+             width: 100%;
+             
+             padding-top: 60px;
+             padding-right: 18%;
+             padding-left: 18%;
+    
+             background-position: left top;
+             background-image: url(../Recursos/cocina.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             
+             transition: 2s background-image 2s;
+            
+    }
+    
+div.intro:hover{
+ background-image: url(../Recursos/pan.png);
+    
+}
+/* Este codigo modifica el fondo1----------------------------------------------------------------------*/
+
+div.fondo01{
+    
+    width: 100%;
+    height: 320px;
+    
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 18%;
+    
+    background-color: black;
+    background-size: cover;
+    
+    
+}
+
+.textotitulo01{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    
+    color: white;
+    
+}
+.textofondo01{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    
+    color: white;
+}
+    div.fondo01 img{
+        padding-right: 15%;
+        padding-left: 15%;
+        
+        width: 480px;
+    }
+/*Este codigo modifica el fondo2-----------------------------------------------------------------------*/
+div.fondo02{
+    height: 320px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 18%;
+    
+    background-color: #d8d8d8;
+    background-size: cover;
+    
+}
+
+.textotitulo02{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: black;
+    
+}
+.textofondo02{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    
+    color: black;
+}
+        div.fondo02 img{
+        padding-right: 15%;
+        padding-left: 15%;
+            
+        width: 480px;
+    }
+    /*Este codigo modifica el icono 1-----------------------------------------------------------------------*/
+div.icono01 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe01{
+    width: 40%;
+    padding-bottom: 10%;
+    
+    display:block;
+    margin: auto;
+}
+.textotitulo1{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon1{
+    padding-bottom: 2%;
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+        
+        
+    }
+/*Este codigo modifica el icono 2-----------------------------------------------------------------------*/
+
+div.icono02 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe02{
+    width: 40%;
+    padding-bottom: 10%;
+    
+    display: block;
+    margin: auto;
+}
+.textotitulo2{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #a65539;
+    
+    }
+
+.textoicon2{
+    padding-bottom: 2%;
+    
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+        
+        
+    }
+/*Este codigo modifica el fondo 3------------------------------------------------------------------------*/
+div.fondo7{
+    height: 320px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 18%;
+    
+    background-color: #a65539;
+    background-size: cover;
+    
+}
+
+.textotitulo7{  
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    
+    color: white;
+    
+}
+.textofondo7{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    color: white;
+}
+    div.fondo7 img{
+        padding-right: 15%;
+        padding-left: 15%;
+        width: 480;
+        
+    }
+/*Este codigo modifica el fondo 4------------------------------------------------------------------------*/
+div.fondo8{
+    height: 320px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 15%;
+    padding-left: 18%;
+    
+    background-color: none;
+    background-size: cover;
+    
+}
+
+.textotitulo8{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #a65539;
+    
+}
+.textofondo8{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    color: #a65539;
+}
+    div.fondo8 img{
+        padding-right: 15%;
+        padding-left: 15%;
+        width: 480;
+    }
+div.fondo8 p a{
+    color: #a65539;
+    text-decoration: underline;
+}
+div.fondo8 p a:hover{
+    color: black;
+    text-decoration: none;
+}
+/*Este codigo modifica el pie de pagina------------------------------------------------------------------------*/
+div.divisionfinal01{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;     
+    float: left;
+    display: inline-block;
+    
+    max-height: 18px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal01:hover{
+    max-height: 400px;
+    
+}
+div.divisionfinal02{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;
+    float: left;
+    display: inline-block;
+
+    max-height: 18px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal02:hover{
+    max-height: 400px;
+    
+}
+    
+
+/*Aqui va el legal*/
+div.legal{
+    padding-top: 1%;
+    display: inline-block;
+    
+}
+div.legal {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 16px;
+    
+    background-color: black;
+    color: gray;
+     
+}
+}
+
+/*Aqui comienzan las media Queries02---------------------------------------------------------------------------*/
+@media screen and (min-width:700px)and (max-width:1060px){
+    /* Modifica la imagen del logo y ese banner --------------------------------------------------------------------a*/
+.inicio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+div.inicio img{
+  
+    width: 220px;
+    }
+    /* El div fondo llama la imagen de portada y no se multiplicara  --------------------------------------------a*/
+    .fondo{
+             height: 350px;
+             width: 100%;
+            
+            
+             padding-top: 85px;
+             padding-left: 90px;
+             padding-right: 90px;
+        
+             text-align: center;
+             
+             background-position: left top;
+             background-image: url(../Recursos/panportada.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             }
+
+         .fondo h2{
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 800;
+             font-size: 70px;
+             font-style: italic;
+             
+             margin-top: 9%;
+             border-width: 5px;
+             border-style: solid;
+             
+             color: white;
+             }
+    
+    /* Este div modifica el titulo debajo de la imagen principal--------------------------------------------------*/
+    div.titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 35px;
+        
+        background-size: cover;
+        text-align: center;
+        
+        padding-top: 20px;
+        padding-bottom: 20px;*/
+        }
+
+    div.titulo span{
+        font-size: 40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+    .titulo span span{
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: auto;
+        }
+    /*Este codigo modifica la introduccion----------------------------------------------------------------------*/
+.textotitulo{
+    
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 65px;
+    color: white;
+    
+    border-width: 5px;
+    border-style: solid;
+    
+    padding-left: 0px;
+    
+    
+    }
+
+  .textoimagen{
+    
+    padding-top: 8%;
+    padding-right: 1px;
+    padding-left: 1px;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight:  400;
+    color: white;
+    
+    }
+
+   div.intro{
+             height: 415px;
+             width: 100%;
+             
+             padding-top: 60px;
+             padding-right: 120px;
+             padding-left: 120px;
+    
+             
+           
+             background-position: left top;
+             background-image: url(../Recursos/cocina.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             
+             transition: 2s background-image 2s;
+            
+    }
+div.intro:hover{
+ background-image: url(../Recursos/pan.png);
+    }
+    /* Este codigo modifica el fondo1----------------------------------------------------------------------*/
+
+div.fondo01{
+    height: 480px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
+    
+    background-color: black;
+    background-size: cover;
+    
+    
+}
+
+.textotitulo01{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    
+    color: white;
+    
+}
+.textofondo01{
+        
+    padding-top: 5%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    
+    color: white;
+}
+    div.fondo01 img{
+        width: 550px;        
+
+    }
+    
+    /*Este codigo modifica el fondo2-----------------------------------------------------------------------*/
+div.fondo02{
+    height: 480px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
+    
+    background-color: #d8d8d8;
+    background-size: cover;
+    
+}
+
+.textotitulo02{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    
+    color: black;
+    
+}
+.textofondo02{
+        
+    padding-top: 5%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:  400;
+    
+    color: black;
+}
+        div.fondo02 img{
+        width: 550px;        
+
+    }
+        /*Este codigo modifica el icono 1-----------------------------------------------------------------------*/
+div.icono01 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe01{
+    width: 190px;
+    
+    padding-bottom: 5%;
+    padding-right: 3%;
+    
+    display:inline-block;
+    margin: auto;
+    
+    float:left;
+}
+.textotitulo1{
+    
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    text-align: left;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon1{
+    
+    padding-top: 0px;
+    text-align: left;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+    color: black;
+        
+    }
+    /*Este codigo modifica el icono 2-----------------------------------------------------------------------*/
+
+div.icono02 {
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    }
+
+.iconcafe02{
+    width: 190px;
+    
+    padding-bottom: 5%;
+    padding-left: 3%;
+    
+    display:inline-block;
+    margin: auto;
+    float: right;
+}
+.textotitulo2{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    text-align: left;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon2{
+    padding-bottom: 2%;
+    text-align: left;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    
+    color: black;
+        
+        
+    }
+        
+/*Este codigo modifica el fondo 3------------------------------------------------------------------------*/
+div.fondo7{
+    height: 480px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
+    
+    background-color: #a65539;
+    background-size: cover;
+    
+}
+
+.textotitulo7{  /*este*/
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    
+    color: white;
+    
+}
+.textofondo7{
+        
+    padding-top: 5%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    
+    color: white;
+}
+/*Este codigo modifica el fondo 4------------------------------------------------------------------------*/
+div.fondo8{
+    height: 480px;
+    width: 100%;
+    
+    padding-top: 10%;
+    padding-right: 25%;
+    padding-left: 25%;
+    
+    background-color: white;
+    background-size: cover;
+    
+}
+
+.textotitulo8{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    
+    color: #a65539;
+    
+}
+.textofondo8{
+        
+    padding-top: 5%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:  400;
+    
+    color: #a65539;
+}
+
+div.fondo8 p a{
+    color: #a65539;
+    text-decoration: underline;
+}
+div.fondo8 p a:hover{
+    color: black;
+    text-decoration: none;
+}
+    /*Este codigo modifica el pie de pagina------------------------------------------------------------------------*/
+div.divisionfinal01{
+    font-family: "Montserrat";
+    font-weight:  400;
+    font-size: 22px;
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;     
+    float: left;
+    display: inline-block;
+    
+    max-height: 22px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal01:hover{
+    max-height: 400px;
+    
+}
+    
+div.divisionfinal02{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;
+    float: left;
+    display: inline-block;
+
+    max-height: 22px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal02:hover{
+    max-height: 400px;
+    
+}
+/*Aqui va el legal*/
+div.legal{
+    padding-top: 1%;
+    display: inline-block;
+    
+}
+div.legal {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 22px;
+    
+    background-color: black;
+    color: gray;
+     
+}
+   
+}
+    /*Aqui comienzan las media Queries03---------------------------------------------------------------------------*/
+@media screen and (min-width:1061px){
+    .inicio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+div.inicio img{
+  
+    width: 230px;
+    }
+   
+    
+    /* El div fondo llama la imagen de portada y no se multiplicara  --------------------------------------------a*/
+       .fondo{
+             height: 500px;
+             width: 100%;
+            
+            
+             padding-top: 15%;
+             padding-left: 20%;
+             padding-right: 20%;
+             text-align: center;
+             
+             background-position: left top;
+             background-image: url(../Recursos/panportada.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             }
+
+         .fondo h2{
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 800;
+             font-size: 90px;
+             font-style: italic;
+             
+             border-width: 6px;
+             border-style: solid;
+             
+             color: white;
+             }
+
+/* Este div modifica el titulo debajo de la imagen principal--------------------------------------------------*/
+    div.titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 45px;
+        
+        background-size: cover;
+        text-align: center;
+        
+        padding-top: 20px;
+        padding-bottom: 20px;*/
+        }
+
+    div.titulo span{
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+    .titulo span span{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-style: italic;
+        
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: auto;
+        }
+
+/*Este codigo modifica la introduccion----------------------------------------------------------------------*/
+.textotitulo{
+    
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size:80px;
+    color: white;
+    
+    border-width: 6px;
+    border-style: solid;
+    
+    padding-left: 0px;
+    
+    
+    }
+
+  .textoimagen{
+    
+    padding-top: 10%;
+      
+    padding-right: 0px;
+    padding-left: 0px;
+      
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight:  400;
+    color: white;
+    
+    
+   
+    }
+
+   div.intro{
+             height: 550px;
+             width: 100%;
+             
+             padding-top: 60px;
+             padding-right: 20%;
+             padding-left: 20%;
+    
+             
+           
+             background-position: left top;
+             background-image: url(../Recursos/cocina.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+             
+             transition: 2s background-image 2s;
+            
+    }
+div.intro:hover{
+ background-image: url(../Recursos/pan.png);
+}
+/* Este codigo modifica el fondo1----------------------------------------------------------------------*/
+
+div.fondo01{
+    height: 300px;
+    width: 50%;
+    
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    background-color: black;
+    background-size: cover;
+    
+    float: left;
+    
+}
+
+.textotitulo01{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    color: white;
+    
+}
+.textofondo01{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: white;
+}
+/*Este codigo modifica el fondo2-----------------------------------------------------------------------*/
+div.fondo02{
+    height: 300px;
+    width: 50%;
+    
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+    background-color: #d8d8d8;
+    background-size: cover;
+    
+    float: left;
+}
+
+.textotitulo02{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: black;
+    
+}
+.textofondo02{
+        
+    padding-top: 5%;
+    padding-right: 0px;
+    padding-left: 0px;
+    
+    text-align: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:  400;
+    
+    color: black;
+}
+    /*Este codigo modifica el icono 1-----------------------------------------------------------------------*/
+div.icono01 {
+    width: 50%;
+    height: 190px;
+    
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    display:inline-block;
+    float: left;
+    }
+
+.iconcafe01{
+    width: 20%;
+    
+    padding-bottom: 5px;
+    padding-right: 15px;
+    
+    float: left;
+    
+    display:inline-block;
+    margin: auto;
+}
+.textotitulo1{
+    
+    padding-bottom: 0px;
+    text-align: left;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    
+    color: #a65539;
+    
+    }
+
+.textoicon1{
+    padding-bottom: 2%;
+    text-align: left;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black; 
+    }
+/*Este codigo modifica el icono 2-----------------------------------------------------------------------*/
+
+div.icono02 {
+    width: 50%;
+    height: 190px;
+    
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+    display:inline-block;
+    float: left;
+    }
+
+.iconcafe02{
+    width: 20%;
+    
+    padding-bottom: 5px;
+    padding-right: 15px;
+    
+    float: left;
+    
+    display:inline-block;
+    margin: auto;
+}
+.textotitulo2{
+    
+    padding-bottom: 0px;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    
+    color: #a65539;
+    
+    text-align: left;
+    }
+
+.textoicon2{
+    padding-bottom: 2%;
+    
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    
+    color: black;
+    }
+/*Este codigo modifica el fondo 3------------------------------------------------------------------------*/
+div.fondo7{
+    height: 290px;
+    width: 50%;
+    
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 3%;
+    
+    background-color: #a65539;
+    background-size: cover;
+    
+    float: left;
+}
+
+.textotitulo7{  
+    
+    padding-bottom: 5%;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    
+    text-align: center;
+    
+    color: white;
+    
+}
+.textofondo7{
+        
+    padding-top: 5%;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    text-align: center;
+    
+    color: white;
+}
+/*Este codigo modifica el fondo 4------------------------------------------------------------------------*/
+div.fondo8{
+    height: 290px;
+    width: 50%;
+    
+    padding-top: 2%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 3%;
+        
+    background-color: white;
+    background-size: cover;
+    
+    float: left;
+}
+
+.textotitulo8{
+    
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    color: #a65539;
+    
+}
+.textofondo8{
+        
+    padding-top: 5%;
+    text-align: center;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: #a65539;
+}
+
+div.fondo8 p a{
+    color: #a65539;
+    text-decoration: underline;
+}
+div.fondo8 p a:hover{
+    
+    color: black;
+    text-decoration: none;
+}
+/*Este codigo modifica el pie de pagina------------------------------------------------------------------------*/
+div.divisionfinal01{
+    
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 30px;
+    
+    text-decoration: underline;
+    
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;     
+    float: left;
+    display: inline-block;
+    
+    max-height: 30px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+}
+div.divisionfinal01:hover{
+    max-height: 400px;
+    
+}
+div.divisionfinal02{
+    font-family: "Montserrat";
+    font-weight:  400;
+    font-size: 30px;
+    color: white;
+    background-color: gray; 
+    
+    width: 50%;
+    float: left;
+    display: inline-block;
+
+    max-height: 30px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    
+    text-decoration: underline;
+}
+div.divisionfinal02:hover{
+    max-height: 400px;
+    
+}
+    
+
+/*Aqui va el legal*/
+div.legal{
+    padding-top: 1%;
+    display: inline-block;
+    
+}
+div.legal {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    
+    font-weight: 400;
+    font-size: 25px;
+    
+     
+}
+    
+}
